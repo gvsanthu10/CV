@@ -1,0 +1,295 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Santhosh Kumar \textsc{Geetha Virupakshappa}
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+\section{Personal Data}
+
+\begin{tabular}{rl}
+    %\textsc{Place and Date of Birth:} & Someplace, Italy  | dd Month 1912 \\
+    \textsc{Address:}   & Henrik Wergelands gate 4, 302, Notodden, Norway, 3675 \\
+    \textsc{Phone:}     & +47 99851101 \\
+    \textsc{email:}     & \href{mailto:alessandro.plasmati@gmail.com}{skgv1024@gmail.com}
+\end{tabular}
+
+%------------
+% Registrations
+\section{Professional Registrations}
+\begin{itemize}
+  \item General medical council, United Kingdom (in process)
+  \vspace{-0.2cm}\item Helsedirektorat, Norwegian Directorate of Health, Norway, from Dec 2019
+  \vspace{-0.2cm}\item Karnataka medical council, India, from Mar 2012
+\end{itemize}
+
+%Qualifcations
+\section{Professional Qualifications}
+\begin{tabular}{rl}
+\textsc{Nov 2019:}&Fellowship of the Royal College of Radiologists (FRCR)\\
+\textsc{Nov 2019:}&MMed (Diagnostic Radiology), Singapore\\
+\textsc{Feb 2018:}&European Diploma in Radiology (EDiR)\\
+\textsc{Aug 2017:}&Doctor of Medicine (Diagnostic Radiology), India\\
+\textsc{Nov 2011:}&Bachelor degree in Medicine, Bangalore, India\\
+\end{tabular}
+
+%Section: Work Experience at the top
+\section{Work Experience}
+
+%First item
+\begin{tabular}{r|p{11cm}}
+\emph{Current -Dec 2018} & Cosultant Radiologist at \textsc{District hospital/Sykehuset Telemark, Notodden, Norway} \\
+ 
+\textsc{}&\emph{Responsibilities}\\&\footnotesize{
+
+\begin{itemize} 
+        \vspace{-0.2cm}\item General radiology services for outpatient and inpatient departments
+        \vspace{-0.2cm}\item Emergency radio-logical services with rotational duties
+        \vspace{-0.2cm}\item Working with CT, Ultrasound, radiography and fluoroscopy as well as CT and ultrasound guided interventions
+        \vspace{-0.2cm}\item Hold clinicoradiological meetings
+        \vspace{-0.2cm}\item Supervise and co-ordinate with radiographers with the daily workload
+     \end{itemize}
+}\\\multicolumn{2}{c}{} \\
+\end{tabular}
+\vspace{-0.2cm}
+
+%Second item
+\begin{tabular}{r|p{11cm}}
+\emph{Jun 2018 -Sep 2018} & Exchange fellow in abdominal imaging at \textsc{Addenbrooke's Hospital, Cambridge University, United Kingdom} \\
+ 
+\textsc{}&\emph{Responsibilities}\\&\footnotesize{
+
+\begin{itemize} 
+        \vspace{-0.2cm}\item Visitor fellowship program in abdominal imaging
+        \vspace{-0.2cm}\item xposure to the clinical flow and management in the the UK
+        \vspace{-0.2cm}\item WParticipated in MDT meetings as well as teaching sessions under supervision
+     \end{itemize}
+}\\\multicolumn{2}{c}{} \\
+\end{tabular}
+\vspace{-0.2cm}
+
+%third item
+\begin{tabular}{r|p{11cm}}
+\emph{Dec 2017-May 2018} & Cosultant Radiologist at \textsc{Radnest Imaging solutions, Bangalore, India} \\
+ 
+\textsc{}&\emph{Responsibilities}\\&\footnotesize{
+
+\begin{itemize} 
+        \vspace{-0.2cm}\item Mainly involved in emergency and routine radiological investigations
+        \vspace{-0.2cm}\item Modalities included CT, MRI, ultrasound and radiography which included MR mammography
+     \end{itemize}
+}\\\multicolumn{2}{c}{} \\
+\end{tabular}
+\vspace{-0.2cm}
+
+%4th item
+\begin{tabular}{r|p{11cm}}
+\emph{Sep 2017-Dec 2017} & Senior Resident at \textsc{Rajarajeshwari medical college, Bangalore, India} \\
+ 
+\textsc{}&\emph{Responsibilities}\\&\footnotesize{
+
+\begin{itemize} 
+        \vspace{-0.2cm}\item Rotational postings in CT, ultrasound and radiography
+        \vspace{-0.2cm}\item Responsible for teaching postgraduate students
+        \vspace{-0.2cm}\item Active participation in administration, teaching and research activities in the department
+     \end{itemize}
+}\\\multicolumn{2}{c}{} \\
+\end{tabular}
+\vspace{-0.2cm}
+
+%5th item
+\begin{tabular}{r|p{11cm}}
+\emph{Jul 2016-Aug 2017} & Senior Resident at \textsc{Tata Memorial Hospital, Mumbai, India} \\
+ 
+\textsc{}&\emph{Responsibilities}\\&\footnotesize{
+
+\begin{itemize} 
+        \vspace{-0.2cm}\item Higher-level radiology training requiring minimal supervision
+        \vspace{-0.2cm}\item Participation in multidisciplinary team meetings
+        \vspace{-0.2cm}\item Research and teaching activities
+     \end{itemize}
+}\\\multicolumn{2}{c}{} \\
+\end{tabular}
+\vspace{-0.2cm}
+
+%---------------------------------------------------------
+%Section: Education
+\section{Education}
+
+%First item
+\begin{tabular}{r|p{11cm}}
+\emph{Aug 2016-Jul 2017} & MD Radio-diagnosis at \textsc{Tata Memorial Hospital, India} \\
+ 
+\textsc{}&\emph{Responsibilities}\\&\footnotesize{
+
+\begin{itemize} 
+        \vspace{-0.2cm}\item Core and intermediate to higher level radiology training as prescribed by the medical council
+        \vspace{-0.2cm}\item The training aimed at the development of academic, professional and research skills with respect to clinical radiology
+        \vspace{-0.2cm}\item The training program included yearly appraisals and final exiting exam
+     \end{itemize}
+}\\\multicolumn{2}{c}{} \\
+\end{tabular}
+
+%--------------GAP___________
+\section{Gap in employment}
+Sep 2019–Dec 2019: I was visiting my parents and in the meantime applying for the Norwegian medical license and visa.\\
+%------end of gap-----------
+
+%-------awards--------
+\section{Awards}
+\begin{itemize}
+  \item Invest in youth program of European congress of radiology (ECR) of the march 2018 conference to which got eligible for sponsorship for conference registration and accommodation. Fee waiver to European diploma in radiology (EDiR) examination.
+  \vspace{-0.2cm}\item Travel scholarship awarded by Sam Jal Mistry Fund for paper presentation,” Imaging features of different sub-types of osteogenic sarcomas”. European congress of radiology (ECR) 2016, Vienna.
+  \vspace{-0.2cm}\item Winner in Radiology quiz arranged by women's cancer initiative conference held at Tata memorial hospital in 2015.
+  \vspace{-0.2cm}\item Best public awareness poster, breast-feeding week, Aug 2011 and Runner up position for best public awareness poster, AIDS awareness program, 2010
+\end{itemize}
+
+%----------publications-------
+\section{Publications}
+\begin{enumerate}
+  \vspace{0.1cm}\item Second Opinion by In-House Radiologists: Present Picture and Emphasis on Standardizing Imaging Protocol in Oncology - Current Problems in Diagnostic Radiology. May 2017. GV Santhoshkumar, Abhishek Mahajan, Subhash Desai, Meenakshi Thakur
+  \vspace{-0.1cm}\item Imaging of retained surgical items: A pictorial review including innovations -Indian Journal of radiology and imaging, Sept 2017. GV Santhoshkumar, Subhash Ramani, Abhishek Mahajan, Nikshita Jain, Rachel Sequeira, Meenakshi Thakur.
+  \vspace{-0.1cm}\item Case of victims of modern imaging technology: Increased information noise concealing the diagnosis. World J Radiol 2017; 9(12): 454-458. Mahajan A, Santhoshkumar GV, Kawthalkar AS, Vaish R, Sable N, Arya S, Desai S.
+  \vspace{-0.1cm}\item Potential role of whole-body diffusion magnetic resonance imaging in tumor staging for pregnant patients with cancer. Indian Journal of Cancer, 2018. DOI: 10.4103/ijc.IJC\_244\_18. Abhishek Mahajan, GV Santhosh Kumar, Tanvi Vaidya, Meenakshi Thakur, Subhash Desai.
+\end{enumerate}
+
+%--------presentations-------
+\section{Presentations}
+\textbf{\textit{As Primary author}}
+\begin{enumerate}
+  \vspace{-0.1cm}\item Essence of python programming language in medical image analysis: Enhancing workplace productivity. The annual conference of European Congress of Radiology, 2018
+  \vspace{-0.1cm}\item New ACR TI-RADS: Know Whether You Know, European congress of radiology, 2018
+  \vspace{-0.1cm}\item Sella and Juxtasella: Imaging anatomy and pathology: Pictorial exhibit. European congress of radiology (ECR) 2016
+  \vspace{-0.1cm}\item Imaging features of different subtypes of osteogenic sarcomas. European congress of radiology (ECR) 2016
+  \vspace{-0.1cm}\item Urgent and emergent radiological diagnoses. Annual conference of Radiological Society of North America (RSNA) 2016
+  \vspace{-0.1cm}\item Leptomeningeal metastasis; can MRI compare with CSF analysis. European congress of radiology (ECR) 2015
+  \vspace{-0.1cm}\item Non-resolving pneumonia other than cancer in tertiary cancer care center: Imaging spectrum of various etiologies and role of tissue diagnosis.  Annual conference of Indian radiological and imaging association- 2015
+  \vspace{-0.1cm}\item Laryngeal tuberculosis mimicking laryngeal cancer. An educational case report presented at Edurad meeting, Mumbai, 2014
+\end{enumerate}
+
+\textbf{\textit{As co-author}}
+\begin{enumerate}
+  \vspace{-0.1cm}\item MRI abdomen sequences: Basics from physics to pathology. ECR 2019
+  \vspace{-0.1cm}\item CNS Tuberculosis– The Great Masquerader. European congress of radiology (ECR) 2017.
+  \vspace{-0.1cm}\item Drug Induced Pulmonary Toxicity: A diagnostic Conundrum! European congress of radiology (ECR) 2017
+  \vspace{-0.1cm}\item Axial skeleton tumors: Orphan of pediatric oncology? European congress of radiology (ECR) 2017.
+  \vspace{-0.1cm}\item Role of imaging in uncovering peritoneum. European congress of radiology (ECR) 2016
+  \vspace{-0.1cm}\item A glimpse to genetics of glioma: Welcome to the era of radiogenomics. Annual conference of Radiological Society of North America (RSNA) 2016.
+  \vspace{-0.1cm}\item Imaging in head and neck squamous cancers, A checklist manifesto. Annual conference of Radiological Society of North America (RSNA) 2016.
+  \vspace{-0.1cm}\item Multiparametric analysis of intra-axial brain lesions on MRI' N A Jain, Annual conference of Radiological Society of North America (RSNA) 2016.
+  \vspace{-0.1cm}\item Pediatric head and neck rhabdomyosarcoma: what the radiologist need to know' N A Jain, Annual conference of Radiological Society of North America (RSNA) 2016.
+  \vspace{-0.1cm}\item Infratemporal fossa and its relation to masticator space. Annual conference of Radiological Society of North America (RSNA) 2016..
+  \vspace{-0.1cm}\item Correlating advanced MR techniques with MIB index to grade and prognosticate gliomas: Can perfusion and diffusion MR solve the riddle? Annual conference of Radiological Society of North America (RSNA) 2016.
+\end{enumerate}
+
+%_------------confeercnes---------
+\section{Conferences attended}
+\begin{itemize}
+  \item Regularly attended European congress of radiology  from 2014
+  \vspace{-0.2cm}\item National and state level radiological conferences
+\end{itemize}
+
+%=======Quality______
+\section{Quality improvement projects}
+
+
+%Section: Scholarships and additional info
+\section{Scholarships and Certificates}
+\begin{tabular}{rl}
+ \textsc{Sept.} 2006 & Scholarship for graduate students with an outstanding curriculum \footnotesize(\EURcr 30,000)\normalsize\\
+\textsc{June} 2006 & {\textsc{Gmat}\textregistered}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}: 730 (\textsc{q:50;v:39}) 96\textsuperscript{th} percentile; \textsc{awa}: 6.0/6.0 (89\textsuperscript{th} percentile)
+\end{tabular}
+
+%Section: Languages
+\section{Languages}
+\begin{tabular}{rl}
+ \textsc{Italian:}&Mothertongue\\
+\textsc{English:}&Fluent\\
+\textsc{French:}&Basic Knowledge\\
+\end{tabular}
+
+\section{Computer Skills}
+\begin{tabular}{rl}
+ Basic Knowledge:& \textsc{php}, my\textsc{sql}, \textsc{html}, Access, \textsc{Linux}, ubuntu, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}\\
+Intermediate Knowledge:& \textsc{vba}, Excel, Word, PowerPoint\\
+\end{tabular}
+
+\section{Interests and Activities}
+Technology, Open-Source, Programming\\
+Paradoxes in Decision Making, Psychoanalysis, Behavioural Finance\\
+Football, Travelling
+
+%\newpage
+%\hypertarget{gmat}{\textsc{Gmat}\setmainfont{LMRoman10 Regular}\textregistered\setmainfont[SmallCapsFont=Fontin-SmallCaps]{Fontin-Regular}}
+
+%\XeTeXpdffile ''GMAT.pdf'' page 1 scaled 800
+
+\end{document}
